@@ -69,8 +69,8 @@ const logUserLocal = async (req, res) => {
 
   res.cookie("token", token, {
     httpOnly: true,
-    secure: false, // Only HTTPS in production
-    sameSite: "lax",
+    secure: true , // Only HTTPS in production
+    sameSite: none ,
     path: "/",
   });
 
