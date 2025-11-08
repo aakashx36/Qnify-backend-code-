@@ -89,8 +89,8 @@ const logOutUser = async (req, res) => {
 
   res.clearCookie(COOKIE_NAME, {
     httpOnly: true,
-    secure: false,
-    sameSite: "lax",
+    secure: true,
+    sameSite: none,
     path: "/",
   });
 
