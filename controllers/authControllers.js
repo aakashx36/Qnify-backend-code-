@@ -31,7 +31,7 @@ const registerUserLocal = async (req, res) => {
   res.cookie("token", token, {
     httpOnly: true,
     secure: true, // Only HTTPS in productionsameSite: 'lax',
-    sameSite: none ,
+    sameSite: "none",
     path: "/",
   });
 
@@ -70,7 +70,7 @@ const logUserLocal = async (req, res) => {
   res.cookie("token", token, {
     httpOnly: true,
     secure: true , // Only HTTPS in production
-    sameSite: none ,
+    sameSite: "none" ,
     path: "/",
   });
 
@@ -90,7 +90,7 @@ const logOutUser = async (req, res) => {
   res.clearCookie(COOKIE_NAME, {
     httpOnly: true,
     secure: true,
-    sameSite: none,
+    sameSite:"none",
     path: "/",
   });
 
