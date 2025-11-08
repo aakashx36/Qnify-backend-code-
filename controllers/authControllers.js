@@ -30,8 +30,8 @@ const registerUserLocal = async (req, res) => {
 
   res.cookie("token", token, {
     httpOnly: true,
-    secure: false, // Only HTTPS in productionsameSite: 'lax',
-    sameSite: "lax",
+    secure: true, // Only HTTPS in productionsameSite: 'lax',
+    sameSite: none ,
     path: "/",
   });
 
