@@ -16,7 +16,7 @@ const {
 // Middleware to handle CORS
 app.use(
   cors({
-    origin: "https://qnify-frontend-code-halsefl05-aakash-bansal-s-projects.vercel.app",
+    origin: "https://qnify-frontend-code.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
